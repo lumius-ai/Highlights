@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quoted
+{% endblock %}
+
+{% block main %}
+<!--In response to a POST, quote can render that second template, embedding within it one or more values from lookup(A helper function).-->
+{{quote['name']}}({{quote['symbol']}}) valued at {{quote['price'] | usd}} per share
+{% endblock %}

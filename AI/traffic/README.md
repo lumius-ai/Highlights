@@ -1,0 +1,5 @@
+First, the model was set up exactly as shown in lecture, with the following:
+    1 convolutional Layer, 32 filters, 3x3 kernel
+    1 max pooling layer, 2x2 pool size
+    1 hidden layer, size 124 with droput
+This resulted in a loss of ~3.49, and an astonishingly low accuracy of ~0.0361. In order to improve accuracy, I first removed the dropout from the hidden layer, resulting in a huge jump to 0.9052 accuracy. To continue to increase accuracy, I tried adding more hidden layers, but this had diminishing returns: 3 layers resulted in accuracy of 0.92, and 6 in acuracy of 0.93. I decided to leave it at 3 layers. The next jump in accuracy came when I introduced a second a second convolution/pooling cycle. This jumped up the accuracy to 0.977. Any further tinkering by increasing the number of filters, or by replacing 3 hidden layers with only on of triple size had minimal results.

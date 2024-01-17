@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <!-- an HTML form that submits to /quote via POST-->
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Enter symbol" type="text" >
+        </div>
+        <button class = "btn btn-primary" type="submit">Get quote</button>
+    </form>
+    <!--In response to a POST, quote can render that second template, embedding within it one or more values from lookup(A helper function).-->
+{% endblock %}

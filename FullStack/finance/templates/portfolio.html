@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class = "mb-3">
+        <h2> Current Portfolio </h2>
+        <table border="3" height="50%" width="50%" bordercolor="blue"
+        align="center" style="border-spacing: 0 10px;">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Shares</td>
+                    <td>Value</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in portfolio %}
+                <tr>
+                    <td>{{row['stock']}}</td>
+                    <td>{{row['quantity']}}</td>
+                    <td>{{(row['pps'] * row['quantity']) | usd}}</td>
+
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h2>Total Value</h3>
+            <p>{{totalVal | usd}}</p>
+        <h2>Cash Remaining</h2>
+            <p>{{cash | usd}}</p>
+    </div>
+{% endblock %}

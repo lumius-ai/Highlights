@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History of transactions
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table border="3" height="50%" width="50%" bordercolor="blue"
+        align="center" style="border-spacing: 0 10px;">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Stock</td>
+                    <td>Quantity</td>
+                    <td>PPS</td>
+                    <td>Date</td>
+                    <td>Type</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in history %}
+                <tr>
+                    <td>{{row['username']}}</td>
+                    <td>{{row['stock']}}</td>
+                    <td>{{row['quantity']}}</td>
+                    <td>{{row['pps']}}</td>
+                    <td>{{row['date']}}</td>
+                    <td>{{row['type']}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

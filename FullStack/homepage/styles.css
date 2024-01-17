@@ -1,0 +1,92 @@
+
+
+/* The style of the main header of each page*/
+.header {
+    background-color: #133201; /*green*/
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+/* The style of the music page header*/
+.MusicHeader {
+    background-color: #200132; /*purple*/
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+/* The style of the books page header*/
+.BooksHeader {
+    background-color: #320113; /*Maroon*/
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+/* The style of the games page header*/
+.GamesHeader {
+    background-color: #013220; /*deep green*/
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.linksMenu {
+    font-size: 20px;
+    word-spacing: 20px;
+    margin-bottom: 2rem;
+    padding: 0.25rem 1rem;
+    text-align: center;
+}
+
+.centerImage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.centerThumbnail
+{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.showPicture
+{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.row
+{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+/*.videoEmbed
+{
+    width: 320px;
+    height: 215px;
+}*/
+.smallText
+{
+    text-align: center;
+    font-size: small;
+}
+
+/*.badge text-bg-new {
+    color: #fff;
+    background-color: #28a745;
+ }*/
