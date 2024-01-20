@@ -1,46 +1,221 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Julian Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+            Razvan Rotundu
+          <div class="contact_info">
+            <img src="images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            raz.rotundu@gmail.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +9055107469
 
-<html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>My Webpage</title>
-        <script>
-            document.addEventListener('DOMContentLoaded', function(){
-                var dt = new Date();
-                document.getElementById("datetime").innerHTML = dt.toLocaleString();
-            })
-        </script>
-    </head>
-    <body>
-        <div class = 'header'>
-            <h1> WELCOME TO MY WEBPAGE</h1>
+          </div>
         </div>
-
-        <!-- Links to the other pages-->
-        <div class = 'linksMenu'>
-            <a href = books.html> Books</a>
-
-            <a href = games.html> Games</a>
-
-            <a href = music.html> Music</a>
-
-        </div>
-
-        <!-- The main text of the page-->
-        <div class = 'bodyDiv'>
-            <img alt = "A picture of me" src = "https://www.forbes.com/advisor/wp-content/uploads/2022/08/bored_ape_yacht_club.jpeg-1.jpg" class = 'centerImage'>
-            <h2>About me</h2>
-            <p>I am a motivated student who’s just finished his second year of a Bachelor of science with an honors specialization in computer science. Although I currently do not have much experience in the field, I am passionate about learning as much as possible about software development</p>
-            <h3> About this page </h3>
-            <p> This is the webpage I'm doing for CS50's 'Unit 8' assignment. It is the home page, linking to three other pages exploring some of my interests: books, games, and music. Books is a list of books I've recently read, with their pictures and summaries. Games are some of my favorite games, with pics and gifs of units. Music are some cool songs I've listened to, with the youtube videos embedded</p>
-
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
 
         </div>
-        <Div class ='smallText'>
-            <h4> Current date/time:</h4>
-            <p id = 'datetime'></p>
-        </Div>
-    </body>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="images/pfp1.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Razvan Rotundu!
+          </h1>
+          <p>
+            I am a motivated student who’s in his third year of a Bachelor of science with an honors specialization in computer science. 
+            I am familiar with using techniques such as K-Neighbor classification, as well as K-means clustering ot construct artificial intelligence models. 
+            Furthermore, I am also familiar with using industry standard machine learning libraries such as Torch, Keras, Scikit-learn, and Tensorflow to build and train AI models. 
+            I also have skills in full stack development, with some experience in web design using Bootstrap, Flask, and Jinja.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="images/python.png"/>
+          <h6>Python</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images/java.png"/>
+          <h6>Java</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+          <img src="images/c.png"/>
+          <h6>C/h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">        
+          <img src="images/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="images/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>
+
+
+      </div>
+    </section>
+          
+    <!-- AI Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        AI Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+
+          <!-- shopping.py -->
+          <div class="project-card">
+            <h3>Crypto Exchange</h3>
+            <ul>
+              <li>Singlehandedly developed a cryptocurrency exchange platform with an established reputation of financial integrity and transparency.</li>
+            </ul>
+          </div>
+          <hr>
+
+          <!-- traffic.py -->
+          <div class="project-card">
+            <h3>Artificial General Intelligence</h3>
+            <ul>
+              <li>Developed the world's first human-like artificial intelligence. Used it mostly just play video games.</li>
+            </ul>
+          </div>
+          <hr>
+
+          <!-- attention.py -->
+          <div class="project-card">
+            <h3>Snake game<h3>
+            <ul>
+              <li style="font-weight:normal;">Created the classic snake game to be played in the broswer.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+
+    <!-- Full Stack Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Full Stack Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+      <!-- finance project -->
+      <div id="projects-container" class="projects-container">
+        <div class="projects-card">
+          <h3>Finance</h3>
+          <ul>
+            <li>Website which allows user to create account on a fictional stock strading platform. Keeps track of the user’s account, balance, and current holdings. Real time stock values are obtained by using the IEX API. (Does not currently work, I used a 30 day free trial during development).</li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- birthdays project -->
+    <div id="projects-container" class="projects-container">
+      <div class="projects-card">
+        <h3></h3>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+  </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Unparalleled mastery of coding languages. 
+          Julian Doe's elegant and efficient solutions consistently redefine the boundaries of what is achievable in the world of programming, 
+          making him a true virtuoso in the digital realm.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Julian Doe's ingenious problem-solving skills, combined with a rare ability to translate complex concepts into elegantly simple code, 
+          elevate him to the ranks of coding prodigies and set a gold standard for excellence that inspires awe among peers.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          As a coding maestro, Julian Doe's creations not only seamlessly navigate the intricate intricacies of software development but also showcase an intuitive understanding of user experience, 
+          proving that his talents extend beyond mere coding prowess to the realm of visionary innovation.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><strong>Thanks for leaving a recommendation!</strong></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
 </html>
