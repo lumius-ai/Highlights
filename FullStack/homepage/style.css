@@ -27,7 +27,6 @@ body {
 
 .topmenu:hover {
   color: white;
-  /* Add the styles here */
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -40,7 +39,6 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  /* Add the styles here */
   font-size: 25px;
   font-style: italic;
 }
@@ -204,9 +202,8 @@ h2 {
 }
 
 .recommendation {
-  font-style: italic;
   text-align: left;
-  width: 21.875rem;
+  width: 43.6rem;
   padding: 1rem;
   background-color: #fff;
   border-radius: 11px;
@@ -218,10 +215,9 @@ h2 {
   height:150px
 }
 
-.recommendation span {
-  color: #7600bc;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+.cimg{
+  width: 50px;
+  
 }
 
 /* Scroll to Top Button */
